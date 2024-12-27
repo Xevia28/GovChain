@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    overflow-x: hidden;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mainNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #212A31;
+    padding: 5px 109px;
+
+}
+
+.navLogo {
+    height: 100px;
+    width: 100px;
+}
+
+.navLogo a img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.linkswrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    z-index: 999;
+}
+
+#navLinks {
+    flex-grow: 1;
+}
+
+#navLinks ul {
+    display: flex;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#navLinks li {
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navLinks li a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600px;
+    color: #A2A7AE;
+    transition: 0.3s ease-in-out;
+}
+
+
+#navLinks li a {
+    text-decoration: none;
+    font-size: clamp(16px, 3vw, 16px);
+    font-weight: 600px;
+    color: #A2A7AE;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+    font-weight: 200;
+    transition: all .3s ease-in-out;
+}
+
+#navLinks li a:hover::after {
+    content: "";
+    width: 30%;
+    height: 2px;
+    background-color: #f1f1f1;
+    position: absolute;
+    bottom: -4px;
+    left: 20px;
+}
+
+#navLinks li a:hover,
+#navLinks li a.active {
+    color: #f1f1f1;
+    transition: 0.3s ease-in-out;
+}
+
+.navBtns {
+    display: flex;
+    column-gap: 40px;
+    align-items: center;
+
+}
+
+.navBtns .navprofile {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.navprofile .navIcon {
+    height: 100%;
+    width: 100%;
+    color: #A2A7AE;
+    transition: 0.3s ease-in-out;
+}
+
+.navBtns .nav-btn {
+    background-color: transparent;
+    width: 100px;
+    height: 40px;
+    border: 2px solid #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: clamp(17px, 3vw, 14px);
+    color: #A2A7AE;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+}
+
+.navBtns .nav-btn:hover,
+.navBtns .navprofile:hover {
+    filter: brightness(0.8);
+}
+
+.mobileView {
+    color: #A2A7AE;
+    font-size: 35px;
+    display: none;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.hide-pc {
+    display: none;
+}
+
+.navBtns a .nav-btn {
+    /* background-color: transparent; */
+    background: #f1f1f13d;
+    width: 100px;
+    height: 40px;
+    border: 2px solid #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: clamp(17px, 3vw, 14px);
+    color: #A2A7AE;
+    transition: 0.3s ease-in-out;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width:850px) {
+    .mainNav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: black; */
+        background-color: #212A31;
+        padding: 5px 0px;
+        /* box-shadow: 0 5px 5px #212A31; */
+        /* border: 1px solid black; */
+        padding: 0 20px;
+    }
+
+    .hide-phone {
+        display: none;
+    }
+
+    .hide-pc {
+        display: block;
+        z-index: 100;
+    }
+
+    .linkswrapper {
+        padding-top: 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        top: 100px;
+        right: -300px;
+        width: 300px;
+        position: fixed;
+        height: 100vh;
+        background-color: #212A31;
+
+        z-index: 9999 !important;
+        transition: 0.3s ease-in-out;
+    }
+
+    .linkswrapper.active {
+        right: 0;
+        width: 100%;
+        z-index: 9999;
+    }
+
+
+    #navLinks {
+        width: 100%;
+    }
+
+    #navLinks ul {
+        flex-direction: column;
+        padding: 0 !important;
+        row-gap: 25px;
+    }
+
+    .mobileView {
+        color: #A2A7AE;
+        font-size: 35px;
+        display: block;
+        cursor: pointer;
+    }
+
+    .navBtns .nav-btn:hover,
+    .navBtns .navprofile:hover {
+        filter: brightness(0.8);
+    }
+
+    #navLinks li {
+        list-style: none;
+        padding: 0 20px;
+        position: relative;
+        padding-top: 0px;
+    }
+
+}

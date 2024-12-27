@@ -1,0 +1,88 @@
+
+.banner {
+    width: 100%;
+    height: 90vh;
+    position: relative;
+    background: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f1f1f1;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: .4;
+    z-index: 0;
+}
+
+.banner-item {
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-direction: column;
+    row-gap: 1rem;
+
+}
+
+.banner-header {
+    font-size: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.view-result-btn {
+    border: 1px solid #f1f1f1;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f1f1f1;
+    text-transform: uppercase;
+    /* font-weight: 500; */
+    background: #f1f1f13d;
+}
+
+.view-result-btn:hover {
+    color: #f1f1f1;
+    background: #f1f1f171;
+}
+
+/* Join Us for Transparent Efficient and Engaging Voting */
+
+
+@media screen and (max-width: 767px) {
+    .banner {
+        height: 80vh;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .banner-header {
+        font-size: 20px;
+    }
+
+    .view-result-btn {
+        width: 120px;
+        height: 40px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .banner-header {
+        font-size: 26px;
+    }
+
+    .view-result-btn {
+        width: 120px;
+        height: 40px;
+    }
+}

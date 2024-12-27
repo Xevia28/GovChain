@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>GovChain</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/ico white.png" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/cursor.css">
+    <link rel="stylesheet" href="css/loader.css">
+
+</head>
+
+<body class="d-flex flex-column h-100">
+    <div class="custom-cursor"></div>
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+    <main class="flex-shrink-0">
+        <nav class="mainNav">
+            <div class="navLogo">
+                <a href="/">
+                    <img src="/assets/white logo.png" alt="Timber Logo">
+                </a>
+            </div>
+            <div id="linkswrapper" class="linkswrapper">
+                <div id="navLinks">
+                    <ul>
+                        <li><a class="nav-link " href="/">HOME</a></li>
+                        <li><a class="nav-link " href=" /currentresults">CURRENT RESULTS</a></li>
+                        <li><a class="nav-link " href="/results">RESULTS</a></li>
+                        <li><a class="nav-link " href="/contact">CONTACT</a></li>
+                        <li><a class="nav-link active" href="/faq">FAQ</a></li>
+                        <li><a class="nav-link" href="/login">
+                                <div class="navBtns hide-pc">
+                                    <a href="/login">
+                                        <div class="nav-btn">
+                                            LOGIN
+                                        </div>
+                                        <a href="/login">
+                                </div>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="navBtns hide-phone">
+                <a href="/login">
+                    <div class="nav-btn">
+                        Login
+                    </div>
+                </a>
+
+            </div>
+            <div class="mobileView">
+                <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="-5 -7 24 24"
+                    id="menuIcon">
+                    <path fill="currentColor"
+                        d="M1 0h5a1 1 0 1 1 0 2H1a1 1 0 1 1 0-2m7 8h5a1 1 0 0 1 0 2H8a1 1 0 1 1 0-2M1 4h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2" />
+                </svg>
+            </div>
+        </nav>
+
+        <!-- <div class="faq-banner">
+            <img src="/assets/faq/faqbanner.jpg" class="banner-image" alt="">
+        </div> -->
+
+        <section class="py-5">
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <h1 class="fw-bolder faq-question">Frequently Asked Questions</h1>
+                    <p class="lead fw-normal text-muted mb-0">How can we help you?</p>
+                </div>
+                <div class="row gx-5">
+                    <div class="col-xl-12">
+                        <div class="accordion mb-5" id="accordionExample">
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingOne"><button class="accordion-button"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">What is a DAO and how does it
+                                        apply to parliamentary voting?</button></h3>
+                                <div class="accordion-collapse collapse show" id="collapseOne"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        A DAO, or Decentralized Autonomous Organization, is an organization represented
+                                        by rules encoded as a computer program that is transparent, controlled by
+                                        organization members, and not influenced by a central government. In the context
+                                        of parliamentary voting, a DAO enables decentralized, transparent, and
+                                        tamper-proof voting processes.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingTwo"><button class="accordion-button"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                        aria-expanded="true" aria-controls="collapseTwo">How does the voting process
+                                        work within the DAO?</button></h3>
+                                <div class="accordion-collapse collapse" id="collapseTwo" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Proposal Creation: A member submits a proposal or bill.</li>
+                                            <li>Debate Period: Members discuss and debate the proposal.</li>
+                                            <li>Voting Period: Members cast their votes using the DAO platform,
+                                                typically
+                                                via a secure digital interface.</li>
+                                            <li>Result Compilation: Votes are automatically counted and results are
+                                                recorded
+                                                on the blockchain.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingThree"><button class="accordion-button"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                        aria-expanded="true" aria-controls="collapseThree">How does the voting happen in
+                                        the Parliament?</button></h3>
+                                <div class="accordion-collapse collapse" id="collapseThree"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Voting in a parliamentary system typically follows a structured and formal
+                                        process, ensuring that all members have the opportunity to express their views
+                                        on legislative proposals and other matters.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingFour"><button class="accordion-button"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                        aria-expanded="true" aria-controls="collapseFour">How are votes recorded and
+                                        verified?</button></h3>
+                                <div class="accordion-collapse collapse" id="collapseFour" aria-labelledby="headingFour"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Votes are recorded on the blockchain, providing an immutable ledger. Each vote
+                                        is verified through cryptographic methods ensuring the integrity and
+                                        authenticity of the vote.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingFive"><button class="accordion-button"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                        aria-expanded="true" aria-controls="collapseFive">What technology is used to
+                                        secure the voting process?</button></h3>
+                                <div class="accordion-collapse collapse" id="collapseFive" aria-labelledby="headingFive"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        The voting process is secured using blockchain technology, which employs
+                                        cryptographic techniques to ensure data integrity and security. Smart contracts
+                                        automate the voting and counting process.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingSix"><button class="accordion-button"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                        aria-expanded="true" aria-controls="collapseSix">How do I cast my vote using the
+                                        DAO application?</button></h3>
+                                <div class="accordion-collapse collapse" id="collapseSix" aria-labelledby="headingSix"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <ul>
+                                            <li>Log In: Access the application with your secure credentials.</li>
+                                            <li>Select Proposal: Choose the proposal or bill you want to vote on.</li>
+                                            <li>Cast Vote: Select your vote option (e.g., Yes, No, Neutral) and confirm.
+                                            </li>
+                                            <li>Confirmation: Receive a confirmation that your vote has been recorded.
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingSeven"><button class="accordion-button"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                        aria-expanded="true" aria-controls="collapseSeven">Can I change my vote after it
+                                        has been cast?</button></h3>
+                                <div class="accordion-collapse collapse" id="collapseSeven"
+                                    aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Typically, once a vote is cast and recorded on the blockchain, it cannot be
+                                        changed.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingEight"><button class="accordion-button"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight"
+                                        aria-expanded="true" aria-controls="collapseEight">How are proposals and bills
+                                        submitted to the DAO?</button></h3>
+                                <div class="accordion-collapse collapse" id="collapseEight"
+                                    aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Proposals can be submitted through the DAO platform by authorized members. The
+                                        submission process involves filling out a form with necessary details.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingNine"><button class="accordion-button"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine"
+                                        aria-expanded="true" aria-controls="collapseNine">Who can see the voting results
+                                        and records?</button></h3>
+                                <div class="accordion-collapse collapse" id="collapseNine" aria-labelledby="headingNine"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Voting results and records are publicly accessible on the blockchain (any one can view the result), ensuring
+                                        transparency. However, the identity of individual voters can be anonymized to
+                                        protect privacy.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingTen"><button class="accordion-button"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen"
+                                        aria-expanded="true" aria-controls="collapseTen">How is voter eligibility
+                                        determined and managed?</button></h3>
+                                <div class="accordion-collapse collapse" id="collapseTen" aria-labelledby="headingTen"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Voter eligibility is managed through a system of digital identities and
+                                        permissions, ensuring only authorized members can participate in the voting
+                                        process. These identities are verified and managed within the DAO framework.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingEleven"><button class="accordion-button"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven"
+                                        aria-expanded="true" aria-controls="collapseEleven">How is my privacy protected
+                                        when voting?</button></h3>
+                                <div class="accordion-collapse collapse" id="collapseEleven"
+                                    aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Votes are recorded on the blockchain without linking to personal identifying
+                                        information. Pseudonymous identities and encrypted transactions protect voter
+                                        privacy.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h3 class="accordion-header" id="headingTwelve"><button class="accordion-button"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve"
+                                        aria-expanded="true" aria-controls="collapseTwelve">What measures are in place
+                                        to prevent fraud and tampering?</button></h3>
+                                <div class="accordion-collapse collapse" id="collapseTwelve"
+                                    aria-labelledby="headingTwelve" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        The decentralized nature of the blockchain, combined with cryptographic security
+                                        measures, makes it extremely difficult to tamper with votes. Additionally, smart
+                                        contracts ensure that all voting rules and procedures are automatically
+                                        enforced.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <section class="d-flex justify-content-center justify-content-lg-between border-bottom">
+
+        </section>
+
+        <div class="container text-center text-md-start mt-5">
+            <div class="row mt-3">
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <div class="navLogo footer-logo">
+                        <a href="/">
+                            <img src="/assets/white logo.png" alt="Timber Logo">
+                        </a>
+                    </div>
+                    <p class="website-description">
+                        Our platform is dedicated to revolutionizing the parliamentary voting process, fostering a
+                        more transparent, efficient, and engaging democratic system.
+                    </p>
+                </div>
+
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-items">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Our Partners
+                    </h6>
+                    <p>
+                        <a href="https://www.gcit.edu.bt/" class="text-reset">GCIT</a>
+                    </p>
+                    <p>
+                        <a href="https://tech.gov.bt/" class="text-reset">GOVTECH</a>
+                    </p>
+                    <p>
+                        <a href="https://www.google.com/search?client=firefox-b-d&q=bhutan"
+                            class="text-reset">Bhutan</a>
+                    </p>
+                    <p>
+                        <a href="https://www.rub.edu.bt/" class="text-reset">RUB</a>
+                    </p>
+                </div>
+
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 footer-items">
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        nav links
+                    </h6>
+                    <p>
+                        <a href="/" class="text-reset">Home</a>
+                    </p>
+                    <p>
+                        <a href="/results" class="text-reset">Results</a>
+                    </p>
+                    <p>
+                        <a href="/faq" class="text-reset">FAQ</a>
+                    </p>
+                    <p>
+                        <a href="/contact" class="text-reset">Contact</a>
+                    </p>
+                </div>
+
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 footer-items">
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="fas fa-home me-3"></i> Thimphu BHutan</p>
+                    <p>
+                        <i class="fas fa-envelope me-3"></i>
+                        info@govchain.com
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="text-center">
+            © 2021 Copyright:
+            <a class="text-reset fw-bold" href="/">Govchain.com</a>
+        </div>
+    </footer>
+    <!-- <-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/nav.js"></script>
+
+    <!-- for smooth scrolling -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="/js/smoothScrolling.js"></script>
+    <script src="/js/cursor.js"></script>
+
+</body>
+
+</html>

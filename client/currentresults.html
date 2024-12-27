@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <title>GovChain</title>
+  <!-- Favicon-->
+  <link rel="icon" type="image/x-icon" href="assets/ico white.png" />
+  <!-- Bootstrap icons-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link href="css/styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/font.css">
+  <link rel="stylesheet" href="/css/nav.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/cursor.css">
+  <link rel="stylesheet" href="css/loader.css">
+  <link rel="stylesheet" href="css/currentResult.css">
+
+</head>
+
+<body>
+  <div class="custom-cursor"></div>
+  <div class="loader-container">
+    <div class="loader"></div>
+  </div>
+
+  <main class="contents flex-shrink-0">
+    <nav class="mainNav">
+      <div class="navLogo">
+        <a href="/">
+          <img src="/assets/white logo.png" alt="Timber Logo">
+        </a>
+      </div>
+      <div id="linkswrapper" class="linkswrapper">
+        <div id="navLinks">
+          <ul>
+            <li><a class="nav-link " href="/">HOME</a></li>
+            <li><a class="nav-link active" href="/currentresults">CURRENT RESULTS</a></li>
+            <li><a class="nav-link " href="/results">RESULTS</a></li>
+            <li><a class="nav-link" href="/contact">CONTACT</a></li>
+            <li><a class="nav-link" href="/faq">FAQ</a></li>
+            <li><a class="nav-link" href="/login">
+                <div class="navBtns hide-pc">
+                  <a href="/login">
+                    <div class="nav-btn">
+                      LOGIN
+                    </div>
+                    <a href="/login">
+                </div>
+              </a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="navBtns hide-phone">
+        <a href="/login">
+          <div class="nav-btn">
+            Login
+          </div>
+        </a>
+
+      </div>
+      <div class="mobileView">
+        <svg xmlns="http://www.w3.org/2000/svg" width="1.5em" height="1.5em" viewBox="-5 -7 24 24" id="menuIcon">
+          <path fill="currentColor"
+            d="M1 0h5a1 1 0 1 1 0 2H1a1 1 0 1 1 0-2m7 8h5a1 1 0 0 1 0 2H8a1 1 0 1 1 0-2M1 4h12a1 1 0 0 1 0 2H1a1 1 0 1 1 0-2" />
+        </svg>
+      </div>
+    </nav>
+    <div class="current-result-container">
+      <div class="currentResultBanner">
+        <img src="assets/currentResultBanner.jpg" alt="">
+        <div class="overlay"></div>
+        <div class="bannerContent">
+          <h1>REVIEW THE LATEST RESULTS</h1>
+          <div class="button-container">
+            <a href="#scroll-to" class="view-current-result">VIEW RESULT</a>
+
+          </div>
+        </div>
+      </div>
+      <!-- <div class="container currentResultBanner">
+        <img src="assets/currentResultBanner.jpg" alt="">
+        <div class="current-result-cta">
+        <h1>SEE THE IMPACT, SHAPE THE FUTURE</h1>
+        </div>
+        <div class="button-container">
+          <a href="#scroll-to" class="view-current-result">VIEW RESULT</a>
+
+        </div>
+      </div> -->
+
+      <div class="container">
+        <div id="scroll-to">
+
+        </div>
+        <div class="voting-result-div">
+          <div class="voting-detail-container">
+            <div class="voting-result-header">
+              This is a dummy topic about voting for the national basket ball team
+            </div>
+            <div class="voting-result-detail">
+              This is the voting title detail where students are not allowed to go home after lunch as there will be
+              activites that will take place when the time occurs and they will need to work
+              Voting Result
+            </div>
+            <div class="card-footer text-secondary">
+              1 year ago
+            </div>
+          </div>
+          <div class="voting-result-card vote-neutral">
+            <div class="vote-count-container">
+              <div class="result-detail">
+                Approval
+              </div>
+              <div class="result-count yesCount">
+                0
+              </div>
+            </div>
+            <div class="vote-count-container">
+              <div class="result-detail">
+                Opposition
+              </div>
+              <div class="result-count noCount">
+                0
+              </div>
+            </div>
+            <div class="vote-count-container">
+              <div class="result-detail">
+                Withholding
+              </div>
+              <div class="result-count neutralCount">
+                0
+              </div>
+            </div>
+            <!-- <div class="vote-count-container">
+              <div class="result-detail">
+                Threshold
+              </div>
+              <div class="result-count">
+                23
+              </div>
+            </div> -->
+            <!-- use class result-passed if the vote is passed and not-passed if result is not passed -->
+            <!-- result-not-passed -->
+            <!--  result-passed  -->
+            <!-- no-decision -->
+
+          </div>
+          <div class="vote-result vote-decision ">
+            Decision
+          </div>
+          <!-- <div class="voting-result-card vote-notpassed">
+            asdf
+          </div> -->
+        </div>
+      </div>
+    </div>
+    <div class="index-image">
+      <!-- <img src="/assets/carousel/image1.jpg" class="image-cta" alt=""> -->
+      <div class="result-cta-container">
+        <div class="result-cta">
+          <div>
+            Unlock insights into our past decisions
+          </div>
+          <!-- <div>
+            Explore previous voting results now for valuable perspectives on our collective direction.
+          </div> -->
+
+        </div>
+        <a href="/results" class="view-results-btn">View</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <section class="d-flex justify-content-center justify-content-lg-between border-bottom">
+
+    </section>
+
+    <div class="container text-center text-md-start mt-5">
+      <div class="row mt-3">
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <div class="navLogo footer-logo">
+            <a href="/">
+              <img src="/assets/white logo.png" alt="Timber Logo">
+            </a>
+          </div>
+          <p class="website-description">
+            Our platform is dedicated to revolutionizing the parliamentary voting process, fostering a
+            more transparent, efficient, and engaging democratic system.
+          </p>
+        </div>
+
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 footer-items">
+          <h6 class="text-uppercase fw-bold mb-4">
+            Our Partners
+          </h6>
+          <p>
+            <a href="https://www.gcit.edu.bt/" class="text-reset">GCIT</a>
+          </p>
+          <p>
+            <a href="https://tech.gov.bt/" class="text-reset">GOVTECH</a>
+          </p>
+          <p>
+            <a href="https://www.google.com/search?client=firefox-b-d&q=bhutan" class="text-reset">Bhutan</a>
+          </p>
+          <p>
+            <a href="https://www.rub.edu.bt/" class="text-reset">RUB</a>
+          </p>
+        </div>
+
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 footer-items">
+          <h6 class="text-uppercase fw-bold mb-4">
+            nav links
+          </h6>
+          <p>
+            <a href="/" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a href="/results" class="text-reset">Results</a>
+          </p>
+          <p>
+            <a href="/faq" class="text-reset">FAQ</a>
+          </p>
+          <p>
+            <a href="/contact" class="text-reset">Contact</a>
+          </p>
+        </div>
+
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 footer-items">
+          <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+          <p><i class="fas fa-home me-3"></i> Thimphu BHutan</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@govchain.com
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center">
+      © 2021 Copyright:
+      <a class="text-reset fw-bold" href="/">Govchain.com</a>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/currentResult.js"></script>
+  <!-- for smooth scrolling -->
+  <script src="https://unpkg.com/@studio-freight/lenis@1.0.32/dist/lenis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="/js/smoothScrolling.js"></script>
+  <script src="/js/cursor.js"></script>
+
+  <script src=" https://cdn.jsdelivr.net/npm/web3@4.8.0/dist/web3.min.js "></script>
+  <script type="module" src="js/web3_init.js"></script>
+  <script src="js/getCurrResult.js"></script>
+
+</body>
+
+</html>

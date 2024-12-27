@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/nav.css"> -->
+    <link rel="icon" type="image/x-icon" href="assets/ico white.png" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/adminResult.css">
+    <title>Topic Recreation</title>
+</head>
+
+<body>
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+
+    <div class="sidebar">
+        <img src="assets/white logo.png" alt="logo" class="sidebar-logo">
+        <a href="/admincrud">Manage Users</a>
+        <a href="/admin">Add New Users</a>
+        <a href="/dashboard">Create Topics</a>
+        <a href="/reopentopic">Manage Topics</a>
+        <a href="/adminresult" class="active">Current Topic</a>
+        <!-- <div class="sidebar-footer text-center">
+            <a href="logout.html" class="btn logout-btn-custom">Logout</a>
+        </div> -->
+    </div>
+
+    <div class="content" style="margin-left:249px; padding:0px; height: 100px;">
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">Current Topic</span>
+                <a href="logout.html" class="btn logout-btn-custom ml-auto">Logout</a>
+            </div>
+        </nav>
+
+        <div class="container mt-5 w-75">
+            <div class="card">
+                <div class="details card-body">
+                    <p class="topicTitle">Title: </p>
+                    <p class="topicDesc">Description: </p>
+                    <p class="voteCount">Votes Cast: </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@4.8.0/dist/web3.min.js"></script>
+    <script type="module" src="js/web3_init.js"></script>
+    <script type="module" src="js/currTopic.js"></script>
+</body>
+
+</html>

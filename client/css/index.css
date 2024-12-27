@@ -1,0 +1,349 @@
+body {
+    cursor: none;
+    background-color: #fffcf7 ;
+}
+
+.card-img-top {
+    width: 300px;
+    height: 300px;
+}
+
+.carousel-item img {
+    height: 90vh;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    left: 0;
+}
+
+.service-section {
+    /* background-color: #212A31; */
+    color: #1c1c1c;
+    position: relative;
+}
+
+.service-overall-container {
+    /* background-color: #212A31; */
+    color: #1c1c1c;
+    padding: 100px 0;
+}
+
+.service-detail-container>div:nth-child(1) {
+    width: 30%;
+}
+
+.service-detail-container>div:nth-child(2) {
+    width: 70%;
+}
+
+.service-detail-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* align-items: center; */
+    border-top: 1px solid #1c1c1c;
+    padding: 70px 0;
+    /* padding-bottom: 100px; */
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 0.3s ease;
+
+}
+
+@keyframes serviceScrolledDown {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.service-scrolled {
+    animation: serviceScrolledDown 0.3s ease forwards;
+}
+
+.service-detail-count {
+    border: 1px solid #1c1c1c;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+
+.service-header {
+    font-weight: 300;
+    font-size: 30px;
+}
+
+.our-services {
+    font-size: 30px;
+    margin: 1rem 0;
+}
+.middle-text-container {
+    text-align: center;
+    height: fit-content;
+    padding: 2rem;
+    display: flex;
+    position: relative;
+    margin-top: 150px;
+    width: 100%;
+    /* background-color: #212A31; */
+    flex-direction: column;
+    align-items: center;
+    overflow-y:hidden;
+    justify-content: center;
+}
+
+.middle-text-container h1{
+    font-weight: 700;
+    font-size: clamp(18px, 3vw, 36px);
+    color: #1c1c1c;
+    padding: 0;
+    margin: 0;
+}
+.middle-text-container h2{
+    font-weight: 600;
+    font-size: clamp(18px, 5vw, 36px);
+    color:#1c1c1c;
+    padding: 0;
+    margin: 0;
+}
+.middle-text-container p{
+    margin: 0;
+}
+/* 
+.middle-text-container.scrolled-down {
+    animation: growCircle 2s forwards;
+}
+
+@keyframes growCircle {
+    from {
+        clip-path: circle(40% at 50% 50%);
+    }
+    to {
+        clip-path: circle(50% at 50% 50%);
+    }
+} */
+
+/* @keyframes shrinkCircle {
+    from {
+        clip-path: circle(50% at 50% 50%);
+    }
+
+    to {
+        clip-path: circle(40% at 50% 50%);
+    }
+} */
+
+
+.our-goal-container {
+    background: #1A3947;
+    color: #f1f1f1;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+.goal-card {
+    width: 400px;
+    height: fit-content;
+    margin: 200px auto;
+    /* border-left: 1px solid #f1f1f1; */
+    /* padding-left: 100px; */
+}
+
+.goal-text-hide {
+    visibility: hidden;
+    font-size: 15px;
+}
+
+.goal-header {
+    font-size: 30px;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-weight: 100 !important;
+    /* border-top: 1px solid #f1f1f1; */
+    border-bottom: 1px solid #f1f1f1;
+    padding: 1rem 0;
+    /* text-align: center; */
+
+}
+
+.goal-content {
+    font-size: clamp(16px, 2vw, 18px);
+    text-align: left;
+
+    /* line-height: 40px; */
+
+}
+
+
+
+.goal-scroll {
+    position: relative;
+}
+
+.content-container {
+    display: flex;
+}
+
+
+.left-content {
+    width: 40%;
+
+}
+
+.right-content {
+    width: 60%;
+}
+
+
+.left-content {
+    height: 100vh;
+    position: relative;
+
+}
+
+.goals {
+    position: absolute;
+    left: 60%;
+    top: 20%;
+        transform: translate(-50%, -50%) translate(0px, 96px) translateY(14rem) !important;
+    width: 450px;
+}
+
+.goals h1{
+    font-size: 30px;
+    font-weight: 400;
+}
+.goals p{
+    font-size: clamp(16px, 2vw, 18px);
+    font-weight: 400;
+}
+
+.contents{
+    overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+
+    .circle h1{
+    transform: translateY(-25vw);
+
+    }
+    .goals{
+        transform: translate(-50%, -50%) translate(0px, 96px) translateY(2rem) !important;
+        width: 95% !important;
+    }
+    .middle-text-container {
+        font-size: 20px;
+    }
+
+    .our-services {
+        font-size: 20px;
+    }
+
+    .goals h1{
+        font-size: 20px;
+    }
+
+    .service-detail-count {
+        width: 70px;
+        height: 70px;
+        font-size: 20px;
+    }
+
+    .service-header {
+        font-size: 20px;
+    }
+
+    .inner {
+        font-size: 13px;
+    }
+
+    .left-content {
+        /* height: 100vh; */
+        height: fit-content;
+        position: relative;
+        width: 100%;
+        display: flex;
+        justify-content: left;
+    }
+
+    .goals p{
+        font-size: 14px;
+
+    }
+    .goals {
+        position: relative;
+        font-size: 20px;
+        font-weight: 700;
+        width: 100%;
+        padding: 0 3rem 0 0;
+        left: 55%;
+    }
+
+    .content-container {
+        flex-direction: column;
+    }
+
+    .our-goal-container {
+        /* padding-top: 100px; */
+        color: #f1f1f1;
+        padding-bottom: 100px;
+        position: relative;
+    }
+
+    .right-content {
+        width: 100%;
+        padding-top: 4rem;
+    }
+
+    .goal-card {
+        width: 100%;
+        height: fit-content;
+        margin: 50px auto;
+        padding: 0 2rem;
+    }
+
+    .goal-content {
+        font-size: 14px;
+        text-align: justify;
+        /* line-height: 30px; */
+    }
+
+    .goal-header {
+        font-size: 20px;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        font-weight: 100 !important;
+        border-bottom: 1px solid #f1f1f1;
+        padding: 1rem 0;
+        text-align: left;
+    }
+
+    .service-detail-container {
+
+        padding-bottom: 60px;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .goals{
+        transform: translateY(6rem);
+    }
+}

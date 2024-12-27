@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/login.css">
+    <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous"></script>
+
+    <title>govchain</title>
+    <style>
+        /* Add custom CSS for validation feedback */
+        .is-invalid {
+            border-color: red;
+        }
+
+        .invalid-feedback {
+            color: red;
+            display: none;
+            /* Initially hide the error message */
+        }
+    </style>
+</head>
+
+<body>
+    <section class="vh-100">
+        <div class="container py-5 h-100">
+            <div class="row d-flex align-items-center justify-content-center h-100">
+                <div class="col-md- col-lg-7 col-xl-6">
+                    <img src="./assets/logo (2).png" class="img-fluid" alt="Phone image">
+                </div>
+                <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+                    <form id="loginForm">
+                        <div data-mdb-input-init class="form-outline mb-4">
+                            <label class="form-label" for="loginCode">Login code</label>
+                            <input type="password" id="loginCode" class="form-control form-control-lg"
+                                placeholder="Enter your code" />
+                            <div class="invalid-feedback">Login code must contain only numbers and cannot be empty.
+                            </div>
+                        </div>
+
+                        <!-- Submit button -->
+                        <button type="submit" data-mdb-button-init data-mdb-ripple-init
+                            class="btn btn-primary btn-lg btn-block">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const form = document.querySelector('#loginForm');
+            const loginCodeInput = form.querySelector('#loginCode');
+            const errorFeedback = loginCodeInput.parentElement.querySelector('.invalid-feedback');
+
+            function addError(element) {
+                element.classList.add('is-invalid');
+                errorFeedback.style.display = 'block'; // Show the error message
+            }
+
+            function clearError(element) {
+                element.classList.remove('is-invalid');
+                errorFeedback.style.display = 'none'; // Hide the error message
+            }
+
+            function validateCode(code) {
+                if (code.trim() === '') {
+                    return false; // Return false if empty
+                }
+                const codePattern = /^[0-9]*$/; // Only allow numbers
+                return codePattern.test(code);
+            }
+
+            form.addEventListener('submit', function (event) {
+                event.preventDefault(); // Prevent form submission
+                const code = loginCodeInput.value.trim();
+
+                if (!validateCode(code)) {
+                    addError(loginCodeInput);
+                } else {
+                    clearError(loginCodeInput);
+                    // Proceed with form submission
+                    form.submit();
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

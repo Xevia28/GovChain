@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/nav.css"> -->
+    <link rel="icon" type="image/x-icon" href="assets/ico white.png" />
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/sidebar.css">
+
+    <title>Topic Recreation</title>
+
+    <style>
+        .content {
+            margin-left: 260px;
+            padding: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+
+        .form-container {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .header {
+            grid-column: span 2;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h2 {
+            font-weight: bold;
+            /* Make the header bold */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="loader-container">
+        <div class="loader"></div>
+    </div>
+
+    <div class="sidebar">
+        <img src="assets/white logo.png" alt="logo" class="sidebar-logo">
+        <a href="/admincrud">Manage Users</a>
+        <a href="/admin">Add New Users</a>
+        <a href="/dashboard">Create Topics</a>
+        <a href="/reopentopic" class="active">Manage Topics</a>
+        <a href="/adminresult">Current Topic</a>
+        <!-- <div class="sidebar-footer text-center">
+            <a href="logout.html" class="btn logout-btn-custom">Logout</a>
+        </div> -->
+    </div>
+    <div class="content" style="margin-left:249px; padding:0px; height: 100px;">
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">Manage Topics</span>
+                <a href="logout.html" class="btn logout-btn-custom ml-auto">Logout</a>
+            </div>
+        </nav>
+        <div class="container mt-5">
+            <!-- <div class="header">
+                <h2>Manage Topics</h2>
+            </div> -->
+
+            <div class="form-container">
+                <form action="">
+                    <h6>Reopen Topic</h6>
+                    <div class="mb-3">
+                        <select id="reopentopic" class="form-select mb-3">
+                        </select>
+                    </div>
+                    <!-- <div class="mb-3">
+                        <select class="form-select" id="decisionSelect">
+                            <option value="" selected disabled>Select decision type</option>
+                            <option value="majority">Majority</option>
+                            <option value="two_third">2/3</option>
+                        </select>
+                    </div> -->
+                    <div class="mb-3">
+                        <label for="votingTimeInput" class="form-label">Voting Time (mins):</label>
+                        <input type="number" class="form-control" id="votingTimeInput" min="1" value="10">
+                        <div class="invalid-feedback" id="votingTimeError">Please enter a positive whole number
+                            greater
+                            than zero.</div>
+                    </div>
+                    <div class="mb-3 text-center">
+                        <button type="button" class="btn btn-primary w-100 p-2"
+                            id="submitTopicReopenButton">Submit</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form-container">
+                <form action="">
+                    <h6>Close Topic</h6>
+                    <select id="closetopic" class="form-select mb-3">
+                    </select>
+
+                    <div class="mb-3 text-center">
+                        <button type="button" class="btn btn-primary w-100 p-2"
+                            id="submitTopicCloseButton">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/web3@4.8.0/dist/web3.min.js"></script>
+    <script type="module" src="js/web3_init.js"></script>
+    <script type="module" src="js/topicmanagement.js"></script>
+</body>
+
+</html>

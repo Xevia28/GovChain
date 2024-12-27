@@ -1,0 +1,42 @@
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(6, 6, 6, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    display: none;
+    /* display is set to none when fectching data you got to set it to flex */
+}
+
+.loader {
+    width: 65px;
+    height: 30px;
+    position: relative;
+}
+
+.loader:before {
+    content: "";
+    position: absolute;
+    border-radius: 50px;
+    box-shadow: 0 0 0 3px inset #fff;
+    animation: l3 0.75s infinite alternate;
+}
+
+@keyframes l3 {
+    0% {
+        inset: 0 35px 0 0;
+    }
+
+    50% {
+        inset: 0 0 0 0;
+    }
+
+    100% {
+        inset: 0 0 0 35px;
+    }
+}

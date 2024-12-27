@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/login.css">
+  <!-- <link rel="stylesheet" href="./css/styles.css"> -->
+  <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous"></script>
+
+  <title>govchain</title>
+</head>
+
+<body>
+  <section class="vh-100">
+    <div class="container py-5 h-100">
+      <div class="row d-flex align-items-center justify-content-center h-100">
+        
+        <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+          <form id="loginForm">
+            <div class="logoContainer">
+              <img src="./assets/white logo.png" alt="">
+            </div>
+            <!-- Email input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+              <label class="form-label" for="email">Email</label>
+
+              <input type="email" id="email" class="form-control form-control-lg" autocomplete="off"
+                placeholder="Enter your email" />
+            </div>
+
+            <!-- Password input -->
+            <div data-mdb-input-init class="form-outline mb-4">
+              <label class="form-label" for="loginCode">Login code</label>
+
+              <input type="password" id="loginCode" class="form-control form-control-lg"
+                placeholder="Enter your code" />
+            </div>
+
+            <div class="d-flex justify-content-end align-items-center mb-4">
+              <!-- Checkbox -->
+            
+              <a href="forgetpassword.html">Forgot password?</a>
+            </div>
+
+            <!-- Submit button -->
+            <button type="submit" data-mdb-button-init data-mdb-ripple-init
+              class="btn btn-primary btn-lg btn-block">Sign in</button>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="./js/login.js"></script>
+</body>
+
+</html>

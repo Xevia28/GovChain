@@ -1,0 +1,73 @@
+.sidebar {
+  background-color: #212a31; /* Softer dark gray */
+  padding: 10px;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  overflow-x: hidden;
+}
+
+.sidebar a {
+  color: white;
+  padding: 15px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s ease;
+  margin-right: 35px;
+}
+
+.sidebar a:hover {
+  background-color: #575757;
+  color: white;
+}
+
+.sidebar a.active {
+  background-color: #0c0c0c; /* Highlight color for active link */
+  color: white;
+  font-weight: bold;
+}
+
+.sidebar-logo {
+  display: block;
+  margin: 10px auto;
+  width: 80%;
+  max-width: 150px;
+  margin-bottom: 1rem;
+}
+
+.sidebar-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+}
+
+.btn-link-custom {
+  text-align: left;
+  margin-left: -9px;
+}
+
+.logout-btn-custom {
+  background-color: #3a3a3a;
+  /* Default hover color */
+  color: #ffffff;
+  border-radius: 5px;
+  /* Rounded corners */
+  padding: 10px 20px;
+  /* Padding for the button */
+  transition: background-color 0.3s ease-in-out;
+  /* Smooth transition for hover effect */
+}
+
+.logout-btn-custom:hover {
+  background-color: #000000;
+  /* Change to black on hover */
+  color: #ffffff;
+}
+
+.navbar-brand-bold {
+  font-weight: bold;
+}

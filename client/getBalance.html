@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="assets/ico white.png" />
+
+</head>
+
+<body>
+    <input type="text" class="address">
+    <button class="btn">Get Balance</button>
+
+    <h1 class="balance"></h1>
+
+    <script src=" https://cdn.jsdelivr.net/npm/web3@4.8.0/dist/web3.min.js "></script>
+    <script type="module" src="js/web3_init.js"></script>
+    <script>
+        window.addEventListener('contractReady', async (smartcontract) => {
+            const { account, contract } = smartcontract.detail; // get the contract once it loads from the web3_init.js
+            document.querySelector(".btn").addEventListener("click", async (e) => {
+                e.preventDefault();
+                try {
+                    let address = document.querySelector(".address").value;
+                    let result = await contract.methods.getTokenBalance(address).call({ from: account });
+                    let tokenAmt = Number(result);
+                    document.querySelector(".balance").innerText = tokenAmt;
+
+                } catch (error) {
+                    console.log(error)
+                }
+            })
+        });
+    </script>
+</body>
+
+</html>

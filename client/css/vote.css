@@ -1,0 +1,43 @@
+.mainContainer{
+    background-color: #fffcf7;
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bannerHeader{
+    font-size: clamp(20px, 3vw, 36px);
+    font-weight: 400 !important;
+}
+
+header{
+    background-color: #1A3947 !important;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+button{
+    display: block;
+    width: 200px;
+    color: white !important;
+    background-color: #1A3947 !important;
+}
+
+button:hover{
+    
+    background-color: #1a3947b8 !important;
+}
+
+.btns{
+    display: flex;
+
+    flex-direction: column;
+    gap: .5rem;
+    justify-content: center;
+    align-items: center;
+}
