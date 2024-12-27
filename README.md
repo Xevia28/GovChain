@@ -1,7 +1,5 @@
 # GovChain
 
-# GovChain
-
 GovChain is a DAO-based decentralized voting platform designed specifically for the Parliament of Bhutan. It provides a transparent, secure, and automated solution for discussing and approving new topics or laws.
 
 ## Features
